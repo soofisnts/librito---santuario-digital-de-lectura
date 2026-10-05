@@ -120,7 +120,7 @@ export const HomeFeed: React.FC = () => {
               </span>
             </div>
             <span className="text-[11px] font-medium text-[#50443f] leading-tight">
-              Días seguidos (Racha activa)
+              Días en tu ritual
             </span>
           </div>
 
@@ -158,7 +158,7 @@ export const HomeFeed: React.FC = () => {
               </span>
             </div>
             <span className="text-[11px] font-medium text-[#50443f] leading-tight">
-              Puntos de santuario
+              Puntos Ritual
             </span>
           </div>
         </div>
@@ -274,7 +274,7 @@ export const HomeFeed: React.FC = () => {
             {/* Píldoras temáticas en auge */}
             <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none text-[11.5px]">
               <span className="text-[#82746e] text-[10.5px] uppercase font-bold tracking-wider shrink-0 mr-1">
-                En auge:
+                Conversaciones:
               </span>
               {[
                 { tag: 'OtoñoLector', count: '420' },

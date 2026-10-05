@@ -1,11 +1,19 @@
 # Estado Actual del Proyecto (`state/actual.md`)
 
-> **Última actualización:** 2026-09-28  
-> **Versión:** 0.1.0-alpha (Prototipo funcional reactivo)
+> **Última actualización:** 2026-10-05  
+> **Versión:** 0.1.1-alpha (Estandarización de UX Writing & Vocabulario contemplativo)
 
 ---
 
 ## 1. Módulos y Funcionalidades Completadas
+
+- [x] **Refinamiento de UX Writing y Consistencia Contemplativa:**
+  - Estandarización de «Días en tu ritual» en sustitución de rachas competitivas (`HomeFeed.tsx`).
+  - Estandarización del término de valor «Puntos Ritual» (`HomeFeed.tsx`).
+  - Reformulación de progreso del beneficio a «A X lecturas de tu beneficio» y reemplazo de candado por destellos (`MonthlyBenefitCard.tsx`).
+  - Calificación emocional de estrellas (1 a 5) enfocada en la resonancia personal (`RegisterStep2.tsx`).
+  - Etiqueta de comunidad «Conversaciones» (`HomeFeed.tsx`).
+  - Estados vacíos cálidos e invitacionales por estantería (`LibraryScreen.tsx`).
 
 - [x] **Flujo de Registro de Lectura (2 pasos):**
   - Paso 1: Selección de lectura actual, búsqueda en catálogo, lista de pendientes o acceso a registro manual/código.

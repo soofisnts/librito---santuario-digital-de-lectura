@@ -55,11 +55,11 @@ export const RegisterStep2: React.FC = () => {
   const [isEditingDate, setIsEditingDate] = useState<boolean>(false);
 
   const labels: Record<number, string> = {
-    1: 'No fue para mí (1/5)',
-    2: 'Lectura regular (2/5)',
-    3: 'Buena lectura, entretenida (3/5)',
-    4: '¡Muy recomendado! Gran libro (4/5)',
-    5: '¡Una obra maestra inolvidable! (5/5)',
+    1: 'No conecté con la lectura (1/5)',
+    2: 'Entretenido (2/5)',
+    3: 'Buena compañía (3/5)',
+    4: 'Resonó profundamente (4/5)',
+    5: 'Inolvidable y transformador (5/5)',
   };
 
   const vibes: { label: BookVibe; emoji: string }[] = [

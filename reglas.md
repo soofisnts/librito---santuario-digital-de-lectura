@@ -41,11 +41,17 @@ Este archivo contiene **exclusivamente restricciones negativas directas y detect
 10. **PROHIBIDO eliminar o desconectar `src/components/EditorialReadingScreen.tsx`.**  
     *Motivo:* Es el archivo de referencia de diseño editorial y wireframes de investigación UX.
 11. **PROHIBIDO alterar o eliminar la lista oficial de 5 librerías asociadas de Buenos Aires en `src/data/bookstores.ts`.**
+12. **PROHIBIDO mostrar comparativas cuantitativas entre usuarios** (ranking de velocidad, «X leyó más que tú», tablas de posición, progreso relativo, etc.).  
+    *Motivo:* Librito es un santuario íntimo, no una competencia. Toda la presentación de datos de comunidad se limita a celebrar los logros propios de cada lector.
+13. **PROHIBIDO mostrar datos de progreso de lectura dentro de un libro** (porcentaje leído, páginas restantes, tiempo estimado, velocidad de lectura, horas acumuladas).  
+    *Motivo:* El progreso intra-libro genera ansiedad métrica y contradice la filosofía contemplativa del producto. El único seguimiento permitido es el estado global del libro (`reading` / `completed` / `want_to_read`).
+14. **OBLIGATORIO utilizar imágenes reales de portadas de libros** cuando estén disponibles (Google Books API, Open Library, listas oficiales o activos locales en `src/assets/images/`). Solo recurrir a imágenes placeholder de Unsplash si no existe portada real obtenible.  
+    *Regla:* Al agregar un libro al catálogo o mock data, buscar primero una URL de portada real antes de usar `photo-1544716278-ca5e3f4abd8c` u otra imagen genérica.
 
 ---
 
 ## 5. Gestión del Contexto y Conversación
 
-12. **PROHIBIDO pegar en el chat el contenido completo de archivos existentes de más de 30 líneas.**  
+15. **PROHIBIDO pegar en el chat el contenido completo de archivos existentes de más de 30 líneas.**  
     *Regla:* Citar siempre el archivo con markdown link (`[Componente.tsx](file:///ruta/Componente.tsx#L10-L25)`) y mostrar únicamente el fragmento modificado.
-13. **PROHIBIDO exceder las 300 líneas en `AGENTS.md`.** Si crece, condensar o trasladar detalles a `gotchas/`, `decisions/` o `contexto/`.
+16. **PROHIBIDO exceder las 300 líneas en `AGENTS.md`.** Si crece, condensar o trasladar detalles a `gotchas/`, `decisions/` o `contexto/`.

@@ -20,7 +20,7 @@ export const MonthlyBenefitCard: React.FC<MonthlyBenefitCardProps> = ({ classNam
 
   const handleCopyCoupon = (code: string) => {
     if (!isBenefitUnlocked) {
-      showToast(`Te ${remainingBooks === 1 ? 'falta 1 lectura' : `faltan ${remainingBooks} lecturas`} para desbloquear este cupón 📖`);
+      showToast(`A ${remainingBooks === 1 ? '1 lectura' : `${remainingBooks} lecturas`} de tu beneficio 📖`);
       return;
     }
     navigator.clipboard?.writeText(code);
@@ -41,7 +41,7 @@ export const MonthlyBenefitCard: React.FC<MonthlyBenefitCardProps> = ({ classNam
               className="material-symbols-outlined text-[20px] text-[#5d2a1a]"
               style={{ fontVariationSettings: "'FILL' 1" }}
             >
-              {isBenefitUnlocked ? 'local_activity' : 'lock'}
+              {isBenefitUnlocked ? 'local_activity' : 'auto_awesome'}
             </span>
           </div>
           <div className="flex-1 min-w-0">
@@ -76,7 +76,9 @@ export const MonthlyBenefitCard: React.FC<MonthlyBenefitCardProps> = ({ classNam
               {isBenefitUnlocked ? 'librito-oct15' : '••••••••••••'}
             </span>
             <span className="text-[12px] text-[#5d2a1a]/85 font-medium truncate">
-              {isBenefitUnlocked ? '15% OFF en caja' : `15% OFF (Faltan ${remainingBooks} libros)`}
+              {isBenefitUnlocked
+                ? '15% OFF en caja'
+                : `15% OFF (A ${remainingBooks} ${remainingBooks === 1 ? 'lectura' : 'lecturas'} de tu beneficio)`}
             </span>
           </div>
           {isBenefitUnlocked ? (
@@ -97,7 +99,7 @@ export const MonthlyBenefitCard: React.FC<MonthlyBenefitCardProps> = ({ classNam
               className="shrink-0 px-3 py-1.5 rounded-full bg-white/70 hover:bg-white text-[#5d2a1a] border border-[#5d2a1a]/20 text-[11px] font-medium transition-all flex items-center gap-1 active:scale-95 cursor-pointer"
               title="Beneficio pendiente de alcanzar meta"
             >
-              <span className="material-symbols-outlined text-[13px]">lock</span>
+              <span className="material-symbols-outlined text-[13px]">auto_awesome</span>
               <span>Pendiente</span>
             </button>
           )}

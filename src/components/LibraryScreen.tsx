@@ -232,15 +232,18 @@ export const LibraryScreen: React.FC = () => {
             <span className="material-symbols-outlined text-[48px] text-[#d4c3bc] mb-2">
               menu_book
             </span>
-            <p className="font-serif text-[17px] font-medium text-[#43271a]">
-              Aún no hay libros en esta estantería
+            <p className="font-serif text-[17px] font-normal text-[#43271a]">
+              {shelf === 'completed' && 'Tu estante de leídos aguarda su primer recuerdo'}
+              {shelf === 'want_to_read' && 'Tu estante de pendientes está despejado'}
+              {shelf === 'favorites' && 'Aún no has guardado lecturas favoritas'}
             </p>
             <p className="text-xs text-[#50443f] mt-1 mb-4">
               Cada libro tiene su propio momento y espacio en tu ritual.
             </p>
             <button
+              type="button"
               onClick={() => startRegistration()}
-              className="px-4 py-2 rounded-full bg-[#a13f2a] text-white text-xs font-semibold shadow-xs"
+              className="px-4 py-2 rounded-full bg-[#a13f2a] hover:bg-[#b84830] text-white text-xs font-semibold shadow-xs transition-all active:scale-95"
             >
               Registrar nuevo libro
             </button>
