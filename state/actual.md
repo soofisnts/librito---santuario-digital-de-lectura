@@ -1,11 +1,14 @@
 # Estado Actual del Proyecto (`state/actual.md`)
 
-> **Última actualización:** 2026-10-05  
-> **Versión:** 0.1.1-alpha (Estandarización de UX Writing & Vocabulario contemplativo)
+> **Última actualización:** 2026-10-07  
+> **Versión:** 0.1.2-demo (Reseteo de estado inicial para demo: 0/1 lecturas mensuales)
 
 ---
 
 ## 1. Módulos y Funcionalidades Completadas
+
+- [x] **Ajuste de Valores Iniciales para Demo:**
+  - Reseteo del conteo de lecturas mensuales a `0` y meta por defecto a `1` libro/mes en `INITIAL_USER` ([mockData.ts](file:///Users/sofia/Downloads/___Curso%20AI%20para%20uxers/librito---santuario-digital-de-lectura/src/data/mockData.ts)).
 
 - [x] **Refinamiento de UX Writing y Consistencia Contemplativa:**
   - Estandarización de «Días en tu ritual» en sustitución de rachas competitivas (`HomeFeed.tsx`).
