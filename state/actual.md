@@ -9,6 +9,7 @@
 
 - [x] **Ajuste de Valores Iniciales para Demo:**
   - Reseteo del conteo de lecturas mensuales a `0` y meta por defecto a `1` libro/mes en `INITIAL_USER` ([mockData.ts](file:///Users/sofia/Downloads/___Curso%20AI%20para%20uxers/librito---santuario-digital-de-lectura/src/data/mockData.ts)).
+  - Invalidación automática de caché anterior de `localStorage` mediante la clave `librito_data_version` en [LibritoContext.tsx](file:///Users/sofia/Downloads/___Curso%20AI%20para%20uxers/librito---santuario-digital-de-lectura/src/context/LibritoContext.tsx#L76-L84).
 
 - [x] **Refinamiento de UX Writing y Consistencia Contemplativa:**
   - Estandarización de «Días en tu ritual» en sustitución de rachas competitivas (`HomeFeed.tsx`).
