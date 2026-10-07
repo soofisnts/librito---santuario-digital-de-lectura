@@ -74,6 +74,12 @@ export const LibritoProvider: React.FC<{ children: React.ReactNode }> = ({ child
   });
 
   const [user, setUser] = useState<UserProfile>(() => {
+    const version = localStorage.getItem('librito_data_version');
+    if (version !== 'demo_v2') {
+      localStorage.setItem('librito_data_version', 'demo_v2');
+      localStorage.removeItem('librito_user');
+      return INITIAL_USER;
+    }
     const saved = localStorage.getItem('librito_user');
     if (saved) {
       try {
